@@ -21,7 +21,7 @@ public boolean withdraw(double amount) {
 // Withdraw the requested amount if sufficient funds are available.
 // Return true if the withdrawal succeeds.
 // Return false otherwise. return false;
-    if (amount <= balance){
+    if (amount <= balance && balance - amount >= 50){
         balance = balance - amount;
         return true;
     }
