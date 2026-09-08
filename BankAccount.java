@@ -22,7 +22,7 @@ public boolean withdraw(double amount) {
 // Return true if the withdrawal succeeds.
 // Return false otherwise. return false;
     if (amount <= balance && balance - amount >= 50){
-        balance = balance - amount;
+        balance = balance - amount -2;
         return true;
     }
     return false;
